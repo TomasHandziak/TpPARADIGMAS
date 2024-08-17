@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="formStyle.css">
+    <link rel="stylesheet" href="styles/regFormStyle.css">
     <title>login</title>
 </head>
 <body>
     <div class="registerForm">
         <h2>Registrate</h2>
         <form action="php/register_user_db.php" method="POST" class="form-container">
-            <a href="index.html"><img src="/files/logo.png" alt=""></a>
+            <a href="index.html"><img src="files/logo.png" alt=""></a>
             <label for="Nombre">Nombre completo:</label>
             <input type="text" id="name" name="name" required>
 
@@ -24,7 +24,7 @@
             <input type="password" id="password" name="password" required>
 
             <label for="password">Repetir contraseña</label>
-            <input type="password" id="repeatPassword" name="repeatPassword"  required>  
+            <input type="password" id="repeatPassword" name="rePassword"  required>  
             
             
             <button type="submit">Registrarse</button>

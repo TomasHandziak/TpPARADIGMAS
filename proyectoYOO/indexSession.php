@@ -1,3 +1,25 @@
+<?php 
+    session_start();
+
+    if(!isset($_SESSION['usuario'])){
+        echo ' 
+        <script>
+        
+            alert("Por favor, Inicia sesion");
+            
+        </script>
+        ';
+        header("loacation: form.php");
+        session_destroy();
+        die;
+    }
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
