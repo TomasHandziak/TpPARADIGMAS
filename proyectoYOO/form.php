@@ -1,3 +1,12 @@
+<?php 
+
+    session_start();
+
+    if (isset($_SESSION['username'])) {
+        header("location: index_login.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +19,7 @@
     <div class="login-form">
         <h2>Iniciar Sesión</h2>
         <form action="php/login.php" method="POST" class="form-container">
-            <a href="index.html"><img src="files/logo.png" alt=""></a>
+            <a href="index.php"><img src="files/logo.png" alt=""></a>
             <label for="username">Correo electronico:</label>
             <input type="text" id="mail" name="mail" required>
             

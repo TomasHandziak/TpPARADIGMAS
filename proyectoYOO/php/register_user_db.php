@@ -23,11 +23,11 @@
     $password = hash('sha512', $password); 
 
 
-    $query = "INSERT INTO usuarios(name, username, mail, password) 
+    $query = "INSERT INTO usurios(name, username, mail, password) 
               VALUES ('$name','$username','$mail','$password')";
 
-    $verificar_mail =mysqli_query($conexion, "SELECT * FROM usuarios WHERE mail='$mail'");
-    $verificar_user =mysqli_query($conexion, "SELECT * FROM usuarios WHERE username='$username'");
+    $verificar_mail =mysqli_query($conexion, "SELECT * FROM usurios WHERE mail='$mail'");
+    $verificar_user =mysqli_query($conexion, "SELECT * FROM usurios WHERE username='$username'");
 
 
     if(mysqli_num_rows($verificar_mail) > 0) {

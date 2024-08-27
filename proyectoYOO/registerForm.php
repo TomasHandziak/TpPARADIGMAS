@@ -28,7 +28,7 @@
             
             
             <button type="submit">Registrarse</button>
-            <p>¿Ya tienes una cuenta?<a href="form.html">Entra</a></p>
+            <p>¿Ya tienes una cuenta?<a href="form.php">Entra</a></p>
         </form>
     </div>
 </body>
