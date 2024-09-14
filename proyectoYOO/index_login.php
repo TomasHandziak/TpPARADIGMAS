@@ -12,6 +12,8 @@
         session_destroy(); 
         die();
     }
+
+    
     
 ?>
 
@@ -29,8 +31,19 @@
         <nav>
             <ul>
                 <li><a href="index.php"><img src="files/logo.png" alt="Logo" class="logo"></a></li>
-                <li><a href="index.php">Inicio</a></li>
-                <li > <a class="logout" href="php/logout.php">Cerrar Sesión</a></li>                
+                <li class="profile"><div class="dropdown">
+                                        <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
+                                        <div class="dropdown-content">
+                                            <div class="profile-image-container">
+                                                <img src="files/profile.png" alt="Imagen de Perfil" class="profile-image">
+                                                <h2 class="profile-name"><?php echo $_SESSION['username'] ?></h2>
+                                            </div>  
+                                            <a href="/mi-perfil">Mi Perfil</a>
+                                            <a href="/mis-pedidos">Mis Pedidos</a>
+                                            <a href="" class="cartBtn-drop">Carrito</a>
+                                            <a class="logout" href="php/logout.php">Cerrar Sesión</a>
+                                        </div>
+                                    </div></li>
             </ul>
             <a href="" class="cartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
