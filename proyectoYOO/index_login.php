@@ -52,8 +52,8 @@
     <main class="mainContainer">
         <h1>Productos</h1>
         <div class="search-and-filter">
-            <input type="text" id="searchBar" placeholder="Buscar productos..." onkeyup="searchProducts()">
             <div class="view-toggle">
+                <input type="text" id="searchBar" placeholder="Buscar productos..." onkeyup="searchProducts()">
                 <button id="toggleView"><i id="btnIcon" class="fa-solid fa-list"></i></button>
             </div>
             <select id="filterCategory" onchange="filterProducts()">

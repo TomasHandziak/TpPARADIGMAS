@@ -44,6 +44,61 @@ nav ul li a {
     margin-left: 30px;
 }
 
+.dropdown-content {
+    display: none;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 160px;
+
+}   
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+    border: none;
+}
+
+.profile-image-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    padding: 10px 0;        
+  }
+  
+  
+  .profile-image {
+    width: 80px;   
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover;   
+  }
+  
+ 
+  .profile-name {
+    margin-top: 10px;      
+    font-size: 16px;       
+    font-weight: bold;      
+    color: #333;             
+    text-align: center;   
+  }
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 .logo {
     width: 60px;
     height: auto;
@@ -80,26 +135,32 @@ h1 {
 
 .search-and-filter {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
+    align-items: center;  
+}
+
+.view-toggle {
+    display: flex;
+    align-items: none;     
 }
 
 .view-toggle {
     display: flex;
     justify-content: center; 
-    align-items: center;     
+    align-items: center;   
+
 }
 
 #toggleView {
    width: 30px;
    height: 30px;
-   margin: 5px;
+   margin: 10px;
+   
 }
-
 
 #searchBar {
     padding: 10px;
-    width: 70%;
+    max-width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
     max-height: 30px;
@@ -110,7 +171,7 @@ h1 {
     width: 25%;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-height: 60px;
+    max-height: 40px;
 }
 
 .list-view {
@@ -144,7 +205,8 @@ h1 {
 }
 
 .textCard {
-    margin: 10px;
+    margin: 10px
+    min
 }
 
 /*Tabla*/
@@ -177,10 +239,10 @@ h1 {
 
 .price  {
     font-size: 16px;
-    color: #9f11d3;
+    color: #9f11d3;  
     display: flex;
     justify-content: center; 
-    align-items: center;  
+    align-items: center; 
 }
 
 .product-card button {
@@ -215,3 +277,42 @@ footer i {
     margin-left: 10px;
 }
 
+.logout {
+    color: rgb(196, 93, 93);
+}
+
+.logout:hover {
+    color: red;
+}
+
+.cartBtn-drop {
+    display: none;
+}
+
+@media (max-width: 630px) {
+    
+    nav ul {
+        margin-right: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .product-card-list {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288); /* Sombra */
+        align-items: center;
+    }
+
+    .product-card-list button{
+        margin-bottom: 10px;
+    }
+    
+    ul li {
+        margin: auto;
+        padding: auto;
+    }
+    nav {
+        justify-content: center;
+    }
+    
+}
